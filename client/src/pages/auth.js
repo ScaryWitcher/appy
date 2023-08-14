@@ -22,7 +22,11 @@ const AuthForm = () => {
 
   return (
     <div>
-      {showLogin ? <Login toggleForm={toggleForm} /> : <Register toggleForm={toggleForm} />}
+      {showLogin ? (
+        <Login toggleForm={toggleForm} />
+      ) : (
+        <Register toggleForm={toggleForm} />
+      )}
     </div>
   );
 };
@@ -37,10 +41,13 @@ const Login = ({ toggleForm }) => {
     event.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:3001/auth/login", {
-        username,
-        password,
-      });
+      const response = await axios.post(
+        `${process.env.REACT_APP_BACKEND_API}/auth/login`,
+        {
+          username,
+          password,
+        }
+      );
 
       setCookies("access_token", response.data.token);
       window.localStorage.setItem("userID", response.data.userID);
@@ -80,7 +87,7 @@ const Register = ({ toggleForm }) => {
   const onSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axios.post("http://localhost:3001/auth/register", {
+      await axios.post(`${process.env.REACT_APP_BACKEND_API}/auth/register`, {
         username,
         password,
       });

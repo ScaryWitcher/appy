@@ -12,7 +12,7 @@ export const UserProducts = ({ userID }) => {
     const fetchProducts = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3001/products/userProducts/${userID}`
+          `${process.env.REACT_APP_BACKEND_API}/products/userProducts/${userID}`
         );
         setProducts(response.data);
       } catch (err) {

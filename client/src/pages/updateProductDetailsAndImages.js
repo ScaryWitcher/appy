@@ -12,7 +12,7 @@ const UpdateProductDetails = () => {
   const updateName = async () => {
     try {
       await axios.put(
-        `http://localhost:3001/products/updateName/${productID}`,
+        `${process.env.REACT_APP_BACKEND_API}/products/updateName/${productID}`,
         {
           name: name,
         }
@@ -26,7 +26,7 @@ const UpdateProductDetails = () => {
   const updatePrice = async () => {
     try {
       await axios.put(
-        `http://localhost:3001/products/updatePrice/${productID}`,
+        `${process.env.REACT_APP_BACKEND_API}/products/updatePrice/${productID}`,
         {
           price: price,
         }
@@ -40,7 +40,7 @@ const UpdateProductDetails = () => {
   const updateDescription = async () => {
     try {
       await axios.put(
-        `http://localhost:3001/products/updateDescription/${productID}`,
+        `${process.env.REACT_APP_BACKEND_API}/products/updateDescription/${productID}`,
         {
           description: description,
         }
@@ -54,7 +54,7 @@ const UpdateProductDetails = () => {
   const updateImages = async (url) => {
     try {
       await axios.put(
-        `http://localhost:3001/products/addProductImages/${productID}`,
+        `${process.env.REACT_APP_BACKEND_API}/products/addProductImages/${productID}`,
         {
           newProductImage: url,
         }

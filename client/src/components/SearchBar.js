@@ -13,7 +13,7 @@ export const SearchBar = ({ location, name, placeHolder }) => {
         return;
       }
       const response = await axios.get(
-        `http://localhost:3001/${location}/search/?q=${searchTerm}`
+        `${process.env.REACT_APP_BACKEND_API}/${location}/search/?q=${searchTerm}`
       );
       name === "username"
         ? setResults(response.data.users)

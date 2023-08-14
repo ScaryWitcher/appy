@@ -11,7 +11,7 @@ export const Product = () => {
     const fetchProduct = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3001/products/product/${productID}`
+          `${process.env.REACT_APP_BACKEND_API}/products/product/${productID}`
         );
         setProduct(response.data);
       } catch (err) {

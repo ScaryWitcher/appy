@@ -10,7 +10,7 @@ export const OtherUserProfile = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3001/auth/user/${Userid}`
+          `${process.env.REACT_APP_BACKEND_API}/auth/user/${Userid}`
         );
         setUser(response.data);
       } catch (err) {

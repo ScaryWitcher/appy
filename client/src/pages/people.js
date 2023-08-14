@@ -8,7 +8,9 @@ export const People = () => {
   useEffect(() => {
     const fetchPeople = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/auth/people");
+        const response = await axios.get(
+          `${process.env.REACT_APP_BACKEND_API}/auth/people`
+        );
         setPeople(response.data);
         console.log(response.data);
       } catch (err) {

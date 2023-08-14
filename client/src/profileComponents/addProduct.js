@@ -20,7 +20,10 @@ export const AddProduct = () => {
     }
 
     try {
-      await axios.post("http://localhost:3001/products/addProduct", product);
+      await axios.post(
+        `${process.env.REACT_APP_BACKEND_API}/products/addProduct`,
+        product
+      );
     } catch (err) {
       console.log(err);
     }

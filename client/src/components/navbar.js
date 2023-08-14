@@ -15,7 +15,7 @@ export const Navbar = () => {
   const fetchPP = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:3001/auth/user/${UserID}`
+        `${process.env.REACT_APP_BACKEND_API}/auth/user/${UserID}`
       );
       setPP(response.data.profilePicture);
     } catch (err) {
