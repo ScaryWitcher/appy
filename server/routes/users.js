@@ -3,6 +3,7 @@ import bcrypt from "bcrypt";
 import express from "express";
 import jwt from "jsonwebtoken";
 import { UserModel } from "../models/User.js";
+import { ContactModel } from "../models/Contact.js";
 const router = express.Router();
 
 router.post("/register", async (req, res) => {
@@ -202,9 +203,15 @@ router.put("/updateX/:contactID", async (req, res) => {
 });
 
 router.post("/addContactDetails", async (req, res) => {
-  const contact = new ContactModel(req.body);
   try {
-    const response = await contact.save();
+    const newContact = new ContactModel(req.body);
+    const contact = await ContactModel.findOne({ user: newContact.user });
+    if (contact) {
+      return res
+        .status(400)
+        .json({ message: "You should update you contactDetails" });
+    }
+    const response = await newContact.save();
     res.json(response);
   } catch (err) {
     res.json(err);

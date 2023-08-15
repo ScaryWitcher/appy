@@ -42,6 +42,7 @@ export const SearchBar = ({ location, name, placeHolder }) => {
         <img
           id="searchIcon"
           src="https://firebasestorage.googleapis.com/v0/b/npstorage.appspot.com/o/images%2Fmagnifier.png?alt=media&token=5399ee75-cd11-45e4-82db-37577a3f8d57"
+          alt="searchIcon"
         ></img>
       </div>
       <div className="resultsContainer">
