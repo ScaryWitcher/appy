@@ -13,7 +13,7 @@ import ScrollToTopButton from "./components/ScrollToTop";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/appy">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
