@@ -5,6 +5,8 @@ import { useCookies } from "react-cookie";
 import { GetUserID } from "../customHooks/userid";
 import { UpdateProfilePic } from "../profileComponents/updateProfilePic";
 import { AddContactDetails } from "../profileComponents/addContactDetails";
+import { UpdateContactDetails } from "../profileComponents/updateContact";
+import AddArticle from "../profileComponents/AddArticle";
 
 export const Profile = () => {
   const [visibleDiv, setVisibleDiv] = useState(null);
@@ -27,10 +29,18 @@ export const Profile = () => {
           <button onClick={() => setVisibleDiv("addContactDetails")}>
             Add Contact Details
           </button>
+          <button onClick={() => setVisibleDiv("updateContactDetails")}>
+            Update Contact Details
+          </button>
+          <button onClick={() => setVisibleDiv("addArticle")}>
+            Add Article
+          </button>
           {isVisibleDiv("add") && <AddProduct />}
           {isVisibleDiv("view") && <UserProducts userID={userID} />}
           {isVisibleDiv("updateProfilePic") && <UpdateProfilePic />}
           {isVisibleDiv("addContactDetails") && <AddContactDetails />}
+          {isVisibleDiv("updateContactDetails") && <UpdateContactDetails />}
+          {isVisibleDiv("addArticle") && <AddArticle />}
         </div>
       ) : (
         <h1>You have to log In first</h1>

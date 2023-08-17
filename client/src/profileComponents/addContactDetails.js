@@ -32,7 +32,6 @@ export const AddContactDetails = () => {
         contact
       );
       alert("Contact Details added successfully");
-      window.location.reload();
     } catch (err) {
       if (err.response && err.response.status === 400) {
         alert(

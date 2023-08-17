@@ -9,6 +9,7 @@ import { OtherUserProfile } from "./profileComponents/otheruserprofile";
 import { Product } from "./pages/product";
 import UpdateProductDetails from "./pages/updateProductDetailsAndImages";
 import ScrollToTopButton from "./components/ScrollToTop";
+import { Articles } from "./pages/AllArticles";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             path="/product/updateDetails/:productID"
             element={<UpdateProductDetails />}
           />
+          <Route path="/articles" element={<Articles />} />
         </Routes>
         <ScrollToTopButton />
       </Router>

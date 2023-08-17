@@ -218,4 +218,15 @@ router.post("/addContactDetails", async (req, res) => {
   }
 });
 
+router.get("/getContactDetails/:userID", async (req, res) => {
+  const userID = req.params.userID;
+
+  try {
+    const response = await ContactModel.findOne({ user: userID });
+    res.json(response);
+  } catch (err) {
+    res.json(err);
+  }
+});
+
 export { router as userRouter };

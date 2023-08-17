@@ -6,8 +6,8 @@ const ContactSchema = new mongoose.Schema({
   instagram: { type: String },
   youtube: { type: String },
   x: { type: String },
+  phNo: { type: Number },
   email: { type: String },
-  PhNo: { type: Number },
 });
 
 export const ContactModel = mongoose.model("contact", ContactSchema);

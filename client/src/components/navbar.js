@@ -55,6 +55,14 @@ export const Navbar = () => {
       >
         <h2> People</h2>
       </Link>
+      <Link
+        to="/articles"
+        className={`nav-link ${
+          location.pathname === "/articles" ? "active" : ""
+        }`}
+      >
+        <h2> Articles</h2>
+      </Link>
       {!cookies.access_token ? (
         <Link
           to="/auth"

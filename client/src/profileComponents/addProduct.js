@@ -28,7 +28,6 @@ export const AddProduct = () => {
       console.log(err);
     }
     alert("product added successfully");
-    window.location.reload();
   };
 
   const handleChange = (event) => {

@@ -923,3 +923,231 @@ body {
   background-color: #fff2f9; /* Lighter background on focus */
   outline: none;
 }
+
+.social-icons-container {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px; /* Adjust the gap as needed */
+  position: center;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.2s; /* Add transition for smooth animation */
+}
+
+.social-icon:hover {
+  transform: scale(1.2); /* Increase size on hover */
+  /* Add additional hover styles here */
+}
+
+/* Styling for the update contact container */
+.updateContactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Styling for the contact details block */
+.contactDetailsBlock {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for input fields */
+.inputField {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+/* Styling for labels */
+.contactLabel {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+  text-align: right;
+  width: 200px; /* Adjust label width as needed */
+  font-family: "Comic Sans MS", cursive, sans-serif; /* Apply the same font as buttons */
+  color: #ff69b4; /* Hot Pink, similar to button background color */
+}
+
+/* Styling for the update button */
+.updateButton {
+  background-color: #ff69b4; /* Hot Pink */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.updateButton:hover {
+  background-color: #ff507e; /* Slightly lighter Hot Pink */
+}
+
+/* Styling for the update contact details heading */
+#updateContactDetailsHeading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #ff69b4;
+  text-align: center;
+}
+
+/* loading.css */
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* addArticle.css */
+
+/* Styling for the add article container */
+#addArticleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Styling for the form section */
+#articleFormSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for input fields */
+.inputField {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Styling for labels */
+.inputLabel {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+  text-align: right;
+  width: 200px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #ff69b4;
+}
+
+/* Styling for the submit button */
+#submitArticleButton {
+  background-color: #ff69b4;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+#submitArticleButton:hover {
+  background-color: #ff507e;
+}
+
+/* Styling for the add article heading */
+#addArticleHeading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #ff69b4;
+  text-align: center;
+}
+
+.all-articles-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.articles-heading {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.article-list {
+  list-style: none;
+  padding: 0;
+}
+
+.article-item {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.article-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.article-content {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.vote-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.vote-button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.vote-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.upvoted {
+  color: #ff69b4;
+}
+
+.downvoted {
+  color: #87ceeb;
+}
