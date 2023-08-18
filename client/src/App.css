@@ -1151,3 +1151,11 @@ body {
 .downvoted {
   color: #87ceeb;
 }
+
+/* Add this CSS to your stylesheet */
+.vote-count {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333; /* You can adjust the color to your preference */
+  margin-left: 10px; /* Adjust the margin as needed */
+}

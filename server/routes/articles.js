@@ -5,10 +5,10 @@ const router = express.Router();
 
 router.get("/", async (req, res) => {
   try {
-    const response = await ArticleModel.find({});
-    res.json(response);
+    const articles = await ArticleModel.find({}).sort({ votes: -1 });
+    res.json(articles);
   } catch (err) {
-    res.json(err);
+    res.status(500).json({ message: "Error fetching articles", error: err });
   }
 });
 
@@ -33,33 +33,26 @@ router.put("/vote/:id", async (req, res) => {
       return res.status(404).json({ message: "Article not found" });
     }
 
-    const userId = currentUser; // Replace with how you retrieve the current user's ID
+    const userId = currentUser;
 
     if (voteType === "upvote") {
       if (article.usersUpVoted.includes(userId)) {
-        // User already upvoted, remove the upvote
         article.usersUpVoted.pull(userId);
       } else {
-        // User upvotes the article
         article.usersUpVoted.push(userId);
 
-        // If user also downvoted before, remove the downvote
         article.usersDownVoted.pull(userId);
       }
     } else if (voteType === "downvote") {
       if (article.usersDownVoted.includes(userId)) {
-        // User already downvoted, remove the downvote
         article.usersDownVoted.pull(userId);
       } else {
-        // User downvotes the article
         article.usersDownVoted.push(userId);
 
-        // If user also upvoted before, remove the upvote
         article.usersUpVoted.pull(userId);
       }
     }
 
-    // Calculate votes based on the length of upvoted and downvoted arrays
     article.votes = article.usersUpVoted.length - article.usersDownVoted.length;
 
     const updatedArticle = await article.save();
