@@ -43,7 +43,7 @@ export const Profile = () => {
           {isVisibleDiv("addArticle") && <AddArticle />}
         </div>
       ) : (
-        <h1>You have to log In first</h1>
+        <h1>Log in to use Features</h1>
       )}
     </div>
   );
