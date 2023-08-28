@@ -10,10 +10,11 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+
+config();
+
 mongoose
-  .connect(
-    "mongodb+srv://scarywitcher:goodboi@cluster0.ypj5ziq.mongodb.net/myApp?retryWrites=true&w=majority"
-  )
+  .connect(process.env.MONGODB_KEY)
   .then(() => console.log("db connected"));
 
 app.use("/auth", userRouter);
@@ -21,5 +22,5 @@ app.use("/products", ProductRouter);
 app.use("/articles", ArticleRouter);
 
 app.listen(process.env.PORT || 3001, () =>
-  console.log("server started at port 3001")
+  console.log(`server started at port ${process.env.PORT || 3001}`)
 );

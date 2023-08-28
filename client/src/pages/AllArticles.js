@@ -7,7 +7,8 @@ export const Articles = () => {
   const [articles, setArticles] = useState([]);
   const currentUser = GetUserID();
   const [cookies, setCookies] = useCookies(["access_token"]);
-
+  
+  
   useEffect(() => {
     const fetchArticles = async () => {
       try {
@@ -59,17 +60,18 @@ export const Articles = () => {
                     }`}
                     onClick={() => handleVote(article._id, "upvote")}
                     disabled={!cookies.access_token}
+                    
                   >
                     {article.usersUpVoted.includes(currentUser) ? (
                       <img
                         className="vote-icon"
-                        src="https://firebasestorage.googleapis.com/v0/b/npstorage.appspot.com/o/images%2FtopArrow.png?alt=media&token=331c1c08-1caf-4bcc-ac70-18f0c8eba964"
+                        src="https://firebasestorage.googleapis.com/v0/b/npstorage.appspot.com/o/images%2FupvoteAfter.png?alt=media&token=42e1a377-1e13-4ed7-b99c-1898e911ce6d"
                         alt="Upvote"
                       />
                     ) : (
                       <img
                         className="vote-icon"
-                        src="https://firebasestorage.googleapis.com/v0/b/npstorage.appspot.com/o/images%2FupvoteHighlighted.png?alt=media&token=c210b94f-803d-49d5-89f3-eef432dec941"
+                        src="https://firebasestorage.googleapis.com/v0/b/npstorage.appspot.com/o/images%2FupvoteBefore.png?alt=media&token=e8907529-96f4-4cd2-9260-205e739a1de3"
                         alt="upvote"
                       />
                     )}
@@ -86,13 +88,13 @@ export const Articles = () => {
                     {article.usersDownVoted.includes(currentUser) ? (
                       <img
                         className="vote-icon"
-                        src="https://firebasestorage.googleapis.com/v0/b/npstorage.appspot.com/o/images%2FbottomArrow.png?alt=media&token=bb8fe897-b526-4425-91ef-b9f7233d921b"
+                        src="https://firebasestorage.googleapis.com/v0/b/npstorage.appspot.com/o/images%2FdownvoteAfter.png?alt=media&token=86907058-347f-4e91-87f3-3f039f8845c9"
                         alt="Downvote"
                       />
                     ) : (
                       <img
                         className="vote-icon"
-                        src="https://firebasestorage.googleapis.com/v0/b/npstorage.appspot.com/o/images%2Fdownvote%20HIghlighted.png?alt=media&token=a045dab0-9f02-41d7-bb30-35b0f86fdc6b"
+                        src="https://firebasestorage.googleapis.com/v0/b/npstorage.appspot.com/o/images%2FdownvoteBefore.png?alt=media&token=699cc6ca-3c35-4e80-affa-09355abe2f8d"
                         alt="Downvote"
                       />
                     )}
