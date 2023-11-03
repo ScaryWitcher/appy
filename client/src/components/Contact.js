@@ -36,7 +36,9 @@ export const Contact = ({ userID }) => {
     "https://firebasestorage.googleapis.com/v0/b/npstorage.appspot.com/o/images%2Fphone%20icon.png?alt=media&token=f5246206-8a09-477d-af0b-08e260291d40";
 
   const handleImageClick = (link) => {
-    window.open(link, "_blank");
+    if (link) {
+      window.location.href = link;
+    }
   };
 
   const handleEmailClick = () => {
