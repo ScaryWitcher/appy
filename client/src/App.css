@@ -33,7 +33,7 @@ body {
   background-color: #ede179; 
   padding: 10px 20px;
   color: #ff69b4;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS", sans-serif;
 }
 
 .nav-link {
@@ -54,7 +54,7 @@ body {
   cursor: pointer;
   font-size: 16px;
   transition: color 0.3s;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS", sans-serif;
 }
 
 #logout:hover {
@@ -100,7 +100,7 @@ body {
 
 .homeContainer,
 .userProductsContainer {
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   text-align: center;
   padding: 20px;
 }
@@ -202,7 +202,7 @@ body {
   display: block;
   font-weight: bold;
   margin-bottom: 8px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   font-size: 20px;
 }
 
@@ -211,7 +211,7 @@ body {
   padding: 12px;
   border: 2px solid #ccc;
   border-radius: 6px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   font-size: 18px;
 }
 
@@ -223,7 +223,7 @@ body {
   border-radius: 6px;
   padding: 12px 24px;
   cursor: pointer;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   font-size: 18px;
 }
 
@@ -244,13 +244,13 @@ body {
   margin-top: 12px;
   color: #ff0000;
   font-size: 16px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
 }
 
 .heading {
   font-size: 32px;
   margin-bottom: 24px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
 }
 
 
@@ -258,7 +258,7 @@ body {
   cursor: pointer;
   color: #007bff;
   font-size: 16px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   margin-top: 16px;
 }
 
@@ -270,7 +270,7 @@ body {
   display: block;
   font-weight: bold;
   margin-bottom: 8px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   font-size: 20px;
   color: #333;
 }
@@ -330,7 +330,7 @@ body {
 
 .personUsername {
   font-size: 24px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   margin: 0; 
 }
 
@@ -513,7 +513,7 @@ body {
   font-size: 28px;
   margin-top: 10px;
   color: #ff69b4; 
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
 }
 
 
@@ -521,20 +521,20 @@ body {
   font-size: 20px;
   margin-top: 20px;
   color: #ff69b4; 
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
 }
 
 #productDescription {
   font-size: 18px;
   margin-top: 10px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
 }
 
 #ProductImagesHeading {
   font-size: 20px;
   margin-top: 20px;
   color: #ff69b4; 
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
 }
 
 
@@ -614,14 +614,14 @@ body {
 .addProductForm h1 {
   font-size: 28px;
   color: #ff69b4; 
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   margin-bottom: 20px;
 }
 
 .addProductForm label {
   font-size: 20px;
   color: #ff69b4; 
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   margin-top: 10px;
   display: block;
 }
@@ -631,7 +631,7 @@ body {
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 6px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   font-size: 18px;
   margin-bottom: 10px;
 }
@@ -643,7 +643,7 @@ body {
   border-radius: 6px;
   padding: 12px 24px;
   cursor: pointer;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   font-size: 18px;
   transition: background-color 0.3s;
 }
@@ -655,7 +655,7 @@ body {
 #imageUploadedSign {
   font-size: 20px;
   color: #ff69b4; 
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   margin-top: 10px;
 }
 
@@ -667,7 +667,7 @@ body {
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 30px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   font-size: 18px;
   margin-bottom: 10px;
   color: #333;
@@ -714,7 +714,7 @@ body {
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 6px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   font-size: 18px;
   margin-right: 10px;
 }
@@ -726,7 +726,7 @@ body {
   margin-right: 10px;
   text-align: right;
   width: 150px; 
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   color: #ff69b4; 
 }
 
@@ -738,7 +738,7 @@ body {
   border-radius: 6px;
   padding: 10px 20px;
   cursor: pointer;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   font-size: 18px;
   transition: background-color 0.3s;
 }
@@ -761,7 +761,7 @@ body {
   font-weight: bold;
   margin-bottom: 10px;
   color: #ff69b4;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
 }
 
 
@@ -772,7 +772,7 @@ body {
   border-radius: 6px;
   padding: 10px 20px;
   cursor: pointer;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   font-size: 18px;
   transition: background-color 0.3s;
 }
@@ -786,14 +786,14 @@ body {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   color: #ff69b4;
   text-align: center;
 }
 
 #otherUserProfile {
   text-align: center;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   background: transparent;
   padding: 20px;
   border-radius: 10px;
@@ -832,14 +832,14 @@ body {
 .ContactDetailsContainer h1 {
   font-size: 28px;
   color: #ff69b4; 
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   margin-bottom: 20px;
 }
 
 .ContactDetailsContainer label {
   font-size: 20px;
   color: #ff69b4; 
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   margin-top: 10px;
   display: block;
 }
@@ -849,7 +849,7 @@ body {
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 6px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   font-size: 18px;
   margin-bottom: 10px;
   color: #333; 
@@ -864,7 +864,7 @@ body {
   border-radius: 6px;
   padding: 12px 24px;
   cursor: pointer;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   font-size: 18px;
   transition: background-color 0.3s;
 }
@@ -876,7 +876,7 @@ body {
 #imageUploadedSign {
   font-size: 20px;
   color: #ff69b4; 
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   margin-top: 10px;
 }
 
@@ -890,7 +890,7 @@ body {
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 30px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   font-size: 18px;
   margin-bottom: 10px;
   color: #333; 
@@ -949,7 +949,7 @@ body {
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 6px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   font-size: 18px;
   margin-right: 10px;
 }
@@ -961,7 +961,7 @@ body {
   margin-right: 10px;
   text-align: right;
   width: 200px; 
-  font-family: "Comic Sans MS", cursive, sans-serif; 
+  font-family: "Comic Sans MS",  sans-serif; 
   color: #ff69b4; 
 }
 
@@ -973,7 +973,7 @@ body {
   border-radius: 6px;
   padding: 10px 20px;
   cursor: pointer;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   font-size: 18px;
   transition: background-color 0.3s;
 }
@@ -987,7 +987,7 @@ body {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   color: #ff69b4;
   text-align: center;
 }
@@ -1024,7 +1024,7 @@ body {
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 6px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   font-size: 18px;
   margin-bottom: 10px;
 }
@@ -1036,7 +1036,7 @@ body {
   margin-right: 10px;
   text-align: right;
   width: 200px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   color: #ff69b4;
 }
 
@@ -1047,7 +1047,7 @@ body {
   border-radius: 6px;
   padding: 10px 20px;
   cursor: pointer;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   font-size: 18px;
   transition: background-color 0.3s;
 }
@@ -1061,7 +1061,7 @@ body {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  sans-serif;
   color: #ff69b4;
   text-align: center;
 }
@@ -1071,7 +1071,7 @@ body {
 .profile-container {
   padding: 20px;
   text-align: center;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: 'Comic Sans MS',  sans-serif;
 }
 
 .profile-operations {
@@ -1091,7 +1091,7 @@ body {
   font-size: 1rem;
   font-weight: bold;
   transition: background-color 0.3s, transform 0.2s;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: 'Comic Sans MS',  sans-serif;
 }
 
 .profile-button:hover {
@@ -1116,7 +1116,7 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: 'Comic Sans MS',  sans-serif;
   background-color: #f7f7f7;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
